@@ -14,7 +14,7 @@ const BuyActionWindow = ({ uid }) => {
   const API_URL = process.env.REACT_APP_API_URL;
 
   const handleBuyClick = () => {
-    axios.post(`${API_URL}/api/v1/user/buyOrder`, {
+    axios.post(`${API_URL}/api/v1/users/buyOrder`, {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

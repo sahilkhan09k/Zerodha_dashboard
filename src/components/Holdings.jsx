@@ -10,7 +10,7 @@ const Holdings = () => {
 useEffect(() => {
   const fetchHoldings = async () => {
     try {
-      const holdingscom = await axios.get(`${API_URL}/api/v1/user/holdings`);
+      const holdingscom = await axios.get(`${API_URL}/api/v1/users/holdings`);
       console.log(holdingscom.data.message);
       setHoldings(holdingscom.data.message);
     } catch (error) {

@@ -14,7 +14,7 @@ const SellActionWindow = ({ uid }) => {
 
   const handleBuyClick = async () => {
   try {
-    await axios.post(`${API_URL}/api/v1/user/sellOrder`, {
+    await axios.post(`${API_URL}/api/v1/users/sellOrder`, {
       id: uid,
       qty: stockQuantity
     });

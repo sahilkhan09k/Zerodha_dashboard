@@ -9,7 +9,7 @@ const Positions = () => {
   const API_URL = process.env.REACT_APP_API_URL;
   useEffect(() => {
     const fetchPositions = async () => {
-      const positionscom = await axios.get(`${API_URL}/api/v1/user/positions`);
+      const positionscom = await axios.get(`${API_URL}/api/v1/users/positions`);
       console.log(positionscom.data.message);
       setPositions(positionscom.data.message);
     }
